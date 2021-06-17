@@ -4,7 +4,9 @@
 
 ## Steps
 
-- 初始化
+## 初始化
+
+- 创建项目 & 加入版本管理
 
 ```sh
 # init project(这个过程可以关联仓库项目地址)
@@ -39,7 +41,9 @@ git push origin  master --force
 └─test
 ```
 
-- 逐步安装依赖和创建编写对应的文件
+## 逐步安装依赖和创建编写对应的文件
+
+- vite 可运行的最基本 web
 
 ```sh
 yarn add vite --dev
@@ -48,4 +52,17 @@ yarn add vite --dev
 # 一个最基本的可运行 web 项目就搭建好了
 # 通过 vite 启动静态服务(默认 3000 端口)
 npx vite
+```
+
+- Vue 开发环境初始化
+
+```sh
+# 安装 vue 依赖
+yarn add vue@3.1.1
+yarn add @vitejs/plugin-vue --dev
+# vue 单文件组件编译器(compiling Vue Single File Components)
+yarn add @vue/compiler-sfc --dev
+# main.js 中初始化 vue 项目挂载
+# 创建 vite.config.js 文件,配置 vite 解析 vue 单文件方法
+# 创建 App.vue 单文件作为项目的创建入口
 ```
