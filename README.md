@@ -66,3 +66,23 @@ yarn add @vue/compiler-sfc --dev
 # 创建 vite.config.js 文件,配置 vite 解析 vue 单文件方法
 # 创建 App.vue 单文件作为项目的创建入口
 ```
+
+- typescript & scss
+
+```sh
+# 安装 typescript 依赖
+yarn add typescript --dev
+
+# 创建 tsconfig.json 配置文件
+# 创建 src/shims-vue.d.ts
+# vite.config.js 改为 vite.config.ts
+# src/main.js 改为 src/main.ts
+
+# 修改 build 脚本 => `"build": "vue-tsc --noEmit && vite build",`
+# index.html 引入的脚本改为 => `<script type="module" src="/src/main.ts"></script>`
+
+# 安装 sass 依赖
+yarn add sass --dev
+# 使用 sass
+# <style lang="scss">
+```

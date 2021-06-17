@@ -9,12 +9,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   #app {
     display:flex;
     flex-direction:column;
     align-items: center;
     background: #000;
     color: #fff;
+    font-size: 20px;
   }
 </style>
