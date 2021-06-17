@@ -1,0 +1,9 @@
+{
+  "name": "vue-vite-ts",
+  "version": "1.0.0",
+  "description": "Create a project base on vue3.x vite & typescript ...",
+  "main": "index.js",
+  "repository": "https://github.com/Juche/vue-vite-ts.git",
+  "author": "Juching",
+  "license": "MIT"
+}
